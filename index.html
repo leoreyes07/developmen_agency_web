@@ -16,13 +16,111 @@
 
     <!-- JS -->
 
-    
+    <script src="./assets/js/menu-mobile.js"></script>
+    <script src="./assets/js/navbar-fixed.js"></script>
 
     <title>Agencia de desarrollo web</title>
 
 </head>
 
 <body>
+    <!-- Menu responsive -->
+    <div class="menu_mobile menu_mobile-show">
+        <header class="menu_mobile-header">
+            <div class="menu_mobile-cont-logo">
+                <a href="#" class="menu_mobile-link_logo">
+                    <img src="./assets/img/logo1.png" class="menu_mobile-logo">
+                </a>
+            </div>
+
+            <button class="menu_mobile-close">
+                <i class="menu_icon-close fa-solid fa-xmark"></i>
+            </button>
+        </header>
+
+        <div class="menu_mobile-body">
+            <nav class="navbar_mobile-nav">
+                <ul class="menu_mobile-list">
+                    <li class="menu_mobile-item">
+                        <a href="#" class="menu_mobile-link">Inicio</a>
+                    </li>
+
+                    <li class="menu_mobile-item">
+                        <a href="#" class="menu_mobile-link">Servicios<i class="fa-solid fa-chevron-down menu_mobile-icon"></i></a>
+                        <ul class="submenu_mobile">
+                            <li class="submenu_mobile-item">
+                                <a href="#" class="submenu_mobile-link">Diseño web</a>
+                            </li>
+                            <li class="submenu_mobile-item">
+                                <a href="#" class="submenu_mobile-link">Desarrollo web</a>
+                            </li>
+                            <li class="submenu_mobile-item">
+                                <a href="#" class="submenu_mobile-link">Desarollo de apps</a>
+                            </li>
+                            <li class="submenu_mobile-item">
+                                <a href="#" class="submenu_mobile-link">Programacion</a>
+                            </li>
+                            <li class="submenu_mobile-item">
+                                <a href="#" class="submenu_mobile-link">Consultoria</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu_mobile-item">
+                        <a href="#" class="menu_mobile-link">Portafolio<i class="fa-solid fa-chevron-down menu_mobile-icon"></i></a>
+                        <ul class="submenu_mobile">
+                            <li class="submenu_mobile-item">
+                                <a href="#" class="submenu_mobile-link">Diseño web</a>
+                            </li>
+                            <li class="submenu_mobile-item">
+                                <a href="#" class="submenu_mobile-link">Desarrollo web</a>
+                            </li>
+                            <li class="submenu_mobile-item">
+                                <a href="#" class="submenu_mobile-link">Desarollo de apps</a>
+                            </li>
+                            <li class="submenu_mobile-item">
+                                <a href="#" class="submenu_mobile-link">Programacion</a>
+                            </li>
+                            <li class="submenu_mobile-item">
+                                <a href="#" class="submenu_mobile-link">Consultoria</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu_mobile-item">
+                        <a href="#" class="menu_mobile-link">Blog<i class="fa-solid fa-chevron-down menu_mobile-icon"></i></a>
+                        <ul class="submenu_mobile">
+                            <li class="submenu_mobile-item">
+                                <a href="#" class="submenu_mobile-link">Diseño web</a>
+                            </li>
+                            <li class="submenu_mobile-item">
+                                <a href="#" class="submenu_mobile-link">Desarrollo web</a>
+                            </li>
+                            <li class="submenu_mobile-item">
+                                <a href="#" class="submenu_mobile-link">Desarollo de apps</a>
+                            </li>
+                            <li class="submenu_mobile-item">
+                                <a href="#" class="submenu_mobile-link">Programacion</a>
+                            </li>
+                            <li class="submenu_mobile-item">
+                                <a href="#" class="submenu_mobile-link">Consultoria</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu_mobile-item">
+                        <a href="#" class="submenu_mobile-link">Equipo</a>
+                    </li>
+
+                    <li class="menu_mobile-item">
+                        <a href="#" class="submenu_mobile-link">Contacto</a>
+                    </li>
+                </ul>
+            </nav>                
+        </div>
+    </div>
+
+    <!-- Layout principal -->
     <div class="layout">
         <!-- Menu -->
         <section class="layout_menu">
@@ -35,6 +133,16 @@
                     </a>
                 </div>
 
+                <!-- Menu navegacion responsive-->
+                 <div class="navbar_mobile-btn">
+                    <button class="mobile_btn-wrap">
+                        <span class="mobile_btn-line"></span>
+                        <span class="mobile_btn-line"></span>
+                        <span class="mobile_btn-line"></span>
+                    </button>
+                 </div>
+
+                <!-- Navegacion -->
                 <nav class="navbar_nav">
                     <ul class="nav_list">
                         <li class="nav_item">
@@ -795,7 +903,7 @@
 
                         <li class="social_item">
                             <a href="#" class="social_link">
-                                <i class="fa-brands fa-twitter social_img"></i>
+                                <i class="fa-brands fa-x social_img"></i>
                             </a>
                         </li>
 

@@ -1,20 +1,21 @@
 /* Variables */
 :root {
     --mx-width: 1320px;
-    --text-body-color: #525260;
-    --primary-color: #5956e9;
-    --secondary-color: #ffffff;
     --banner-color: #2522BA;
-    --text-btn-color: #0d6efd;
+    --border-color: #e3e6e9;
     --btn-bg-color: #ffdc60;
-    --text-subttitle-color: #c75c6f;
-    --text-black-color: #292930;
     --bg-card-color: #f8f8f8;
     --bg-proyects-color: #ECF2F6;
     --bg-dark-color: #27272E;
-    --text-description-color: #99a1aa;
+    --logo-color: #736BF4;
     --over-dark-color: #303035;
-    --border-color: #e3e6e9;
+    --primary-color: #5956e9;
+    --secondary-color: #ffffff;
+    --text-body-color: #525260;
+    --text-btn-color: #0d6efd;
+    --text-subttitle-color: #c75c6f;
+    --text-black-color: #292930;
+    --text-description-color: #99a1aa;
 }
 
 
@@ -53,6 +54,17 @@ body {
     align-items: center;
 }
 
+.menu_navbar-fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9;
+    padding: 1.5rem 9.2rem;
+    background-color: var(--secondary-color);
+    box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 10%);
+}
+
 .navbar_logo {
     width: 187px;    
 }
@@ -67,7 +79,7 @@ body {
     position: relative;
     display: inline-block;
     font-weight: 500;
-    color: var(--color-text-body);
+    color: var(--text-body-color);
     transition: all 300ms ease-in-out;
 }
 
@@ -225,7 +237,7 @@ body {
     padding: 2.8rem 4.5rem;
     border-radius: 20px;
     background-color: var(--secondary-color);
-    color: var(--text-btn-color);
+    color: var(--logo-color);
     font-size: 1.8rem;
     font-weight: 500;
     text-transform: capitalize;
@@ -235,7 +247,7 @@ body {
 
 .banner_btn:hover {
     background-color: var(--btn-bg-color);
-    color: var(--color-text-body);
+    color: var(--text-body-color);
     transition: all 300ms ease-in-out;
 }
 
@@ -1390,4 +1402,131 @@ body {
     left: 77%;
 }
 
+/* Navegacion responsibe */
+.navbar_mobil-btn {
+    display: none;
+}
 
+.mobile_btn-wrap {
+    height: 5rem;
+    width: 5rem;
+    background-color: var(--logo-color);
+    border: none;
+    border-radius: 1.5rem;
+    transition: all 300ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.mobile_btn-line {
+    width: 2rem;
+    height: 0.2rem;
+    background-color: var(--secondary-color);
+    margin-bottom: 0.4rem;
+    border-radius: 1rem;
+    transition: all 300ms ease-in-out;
+}
+
+.menu_mobile {
+    visibility: hidden;
+    opacity: 0;
+
+    position: fixed;
+    left: -300px;
+    top: 0;
+    z-index: 10;
+    width: 30rem;
+    height: 100%;
+    background-color: var(--secondary-color);
+    padding: 5rem 1rem;
+    padding-top: 0;
+    box-shadow: 0px 0px 85px -35px rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    transition: all 500ms cubic-bezier(0.7, 0.2, 0.05, 1);
+}
+
+.menu_mobile-show {
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+}
+
+.menu_mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 1rem;
+    padding: 2rem 0rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.menu_mobile-cont-logo{
+    width: 15rem;
+}
+
+.menu_mobile-link_logo {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.menu_mobile-close {
+    background-color: transparent;
+    height: 3rem;
+    width: 3rem;
+    border: 0.1px solid var(--border-color);
+    border-radius: 0.7rem;
+    color: var(--text-description-color);
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.menu_mobile-list {
+    display: block;
+    height: 100%;
+    overflow: auto;
+}
+
+.menu_mobile-item {
+    position: relative;
+    border-bottom: 1px solid var(--border-color);
+    margin: 0 1rem;
+}
+
+.menu_mobile-link {
+    position: relative;
+    height: 5rem;
+    line-height: 5rem;
+    color: var(--text-body-color);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu_mobile-icon {
+    font-size: 1.4rem;
+}
+
+.submenu_mobile {
+    display: none;
+    visibility: visible;
+    opacity: 1;
+    min-width: 100%;
+    padding: 0;
+    padding-bottom: 1rem; 
+}
+
+.submenu_mobile-link {
+    display: block;
+    text-decoration: none;
+    height: 5rem;
+    position: relative;
+    padding: 1.5rem 0.2rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: var(--text-body-color);
+}

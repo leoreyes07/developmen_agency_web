@@ -3,6 +3,10 @@
         min-width: 1600px;
     }
 
+    .navbar_mobile-btn {
+        display: none;
+    }
+
     .layout_menu {
         width: 100%;
         padding: 5rem 9.5rem;
@@ -17,12 +21,25 @@
         padding-bottom: 30rem;
     }
 
+    .menu_mobile {
+        visibility: hidden;
+        opacity: 0;
+    } 
+
     .services_service {
         padding: 8rem 5rem;
     }
 }
 
-@media (min-width: 1201px) and (max-width: 1400px) {
+@media (min-width: 1201px) and (max-width: 1599px) {
+    .menu_mobile {
+        visibility: hidden;
+        opacity: 0;
+    } 
+
+    .navbar_mobile-btn {
+        display: none;
+    }
 
     .reviews_grid,
     .clients_container,
@@ -41,6 +58,10 @@
 @media (max-width: 1200px) {
     .layout {
         min-width: 992px;
+    }
+
+    .navbar_mobile-btn {
+        display: none;
     }
 
     .nav_item {
@@ -75,6 +96,11 @@
         gap: 4rem;
     }
 
+    .categories_item {
+        font-size: 1.8rem;
+        margin: -1.7rem;
+    }
+
     .layout_stats,
     .layout_clients {
         padding: 10rem 6rem;
@@ -86,6 +112,11 @@
 
     .layout_news {
         padding: 10rem 0;
+    }
+
+    .news_new {
+        display: flex;
+        flex-direction: column;
     }
 
     .news_list {
@@ -103,6 +134,10 @@
         padding-bottom: 7rem;
     }
 
+    .menu_mobile {
+        visibility: hidden;
+        opacity: 0;
+    } 
 }
 
 @media (max-width: 1000px) {
@@ -110,8 +145,17 @@
         min-width: auto;
     }
 
+    .menu_mobile {
+        visibility: visible;
+        opacity: 1;
+    } 
+
     .navbar_nav {
         display: none;
+    }
+
+    .navbar_mobile-btn {
+        display: block;
     }
 
     .layout_banner {
@@ -183,6 +227,12 @@
 
     .layout_projects {
         padding: 8rem 4rem;
+    }
+
+    .categories_item {
+        padding: 0px 3rem;
+        font-size: 1.8rem;
+        margin: -1.7rem;
     }
 
     .projects_shapes-shape2 {
@@ -354,5 +404,174 @@
 
     .layout_services {
         margin: 6rem 6rem;
+    }
+
+    .reviews_grid,
+    .clients_container,
+    .news_container,
+    .footer_container {
+        max-width: 54rem;
+    }
+
+    .services_subtitle,
+    .projects_subtitle,
+    .stats_subtitle,
+    .reviews_subtitle,
+    .clients_subtitle,
+    .news_subtitle {
+        font-size: 1.6rem;
+
+    }
+
+    .services_title,
+    .projects_title,
+    .reviews_title,
+    .news_title,
+    .contact_title {
+        font-size: 5rem;
+    }
+
+    .layout_projects {
+        padding: 6rem 5rem;
+    }
+
+    .projects_all {
+        flex-direction: column;
+        align-items: center;  
+    }
+
+    .projects_project {
+        width: calc(100% - 3.5rem);    
+    }
+
+    .categories_item {
+        font-size: 1.6rem;
+        margin: -1.7rem;
+        padding: 0 1rem;
+    }
+
+    .layout_stats, 
+    .layout_clients {
+        padding: 6rem 3rem;
+    }
+
+    .stats_count {
+        font-size: 4.4rem;
+    }
+
+    .layout_reviews {
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+    }
+
+    .reviews_review {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .layout_news {
+        padding: 6rem 0;
+    }
+
+    .new_title {
+        font-size: 2rem;
+    }
+
+    .layout_contact {
+        padding-top: 6rem;
+        padding-bottom: 4rem;
+    }
+
+    .layout_contact::before {
+        height: 38rem;
+    }
+
+    .contact_thumb-chat {
+        margin-right: -10rem;
+        margin-bottom: -0.8rem;
+        width: 80%;
+    }
+    
+    .contact_thumb-laptop {
+        bottom: 0;
+        left: 8rem;
+        width: 35%;
+    }
+    
+    .contact_thumb-chat {
+        margin-right: -15rem;
+        margin-bottom: -1rem;
+        width: 60%;
+    }
+
+    .contact_thumb-mobile {
+        bottom: 0;
+        right: 2rem;
+        width: 32%;
+    }
+
+    .social_img {
+        font-size: 3rem;
+    }
+
+    .footer_left-container {
+        border-right: none;
+        padding-right: 0;
+        margin-right: 0;
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 640px) {
+    
+    .stats_container,
+    .reviews_grid,
+    .clients_container,
+    .news_container,
+    .footer_container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .layout_services {
+        margin-left: 3rem;
+        margin-right: 1.2rem;
+    }
+
+    .categories_item {
+        font-size: 1.3rem;
+        margin: -1.9rem;
+        padding: 0 1.3rem;
+    }
+
+    .layout_projects {
+        padding-left: 3rem;
+        padding-right: 1.2rem;
+    }
+
+    .projects_all {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .backshapes_shape1 {
+        right: 32%;
+        left: 40%;
+    }
+
+    .backshapes_shape6 {
+        max-width: 12%;
+    }
+
+    .footer_widget-50 {
+        flex-basis: auto;
+    }
+
+    .footer_widget {
+        margin-bottom: 3rem;
+    }
+
+    .flinks_item-separator::after {
+        left: 53.6%;
     }
 }
