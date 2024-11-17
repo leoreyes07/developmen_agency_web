@@ -150,7 +150,7 @@
     }
 
     .menu_navbar-fixed {
-        padding: 1.2rem 3rem;
+        padding: 1.2rem 7rem;
     }
 
     .navbar_mobile-btn {
@@ -394,7 +394,7 @@
 
 @media (max-width: 770px) {
     .menu_navbar-fixed {
-        padding: 1.2rem 3rem;
+        padding: 1.2rem 6rem;
     }
 
     .layout_banner {
@@ -538,7 +538,7 @@
     }
 
     .menu_navbar-fixed {
-        padding: 1.2rem 3rem;
+        padding: 1.2rem 5rem;
     }
 
     .layout_services {
@@ -591,7 +591,7 @@
     }
 
     .menu_navbar-fixed {
-        padding: 1.2rem 3rem;
+        padding: 1.2rem 5rem;
     }
 
     .banner_btn {
@@ -687,7 +687,7 @@
 
 @media (max-width: 360px) {
     .menu_navbar-fixed {
-        padding: 1.2rem 3rem;
+        padding: 1.2rem 5rem;
     }
 
     .layout_banner {
@@ -771,7 +771,7 @@
 
 @media (max-width: 344px) {
     .menu_navbar-fixed {
-        padding: 1.2rem 3rem;
+        padding: 1.2rem 5rem;
     }
 
     .layout_banner {
