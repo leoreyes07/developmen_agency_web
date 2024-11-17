@@ -21,10 +21,10 @@
         padding-bottom: 30rem;
     }
 
-    .menu_mobile {
+/*     .menu_mobile {
         visibility: hidden;
         opacity: 0;
-    } 
+    } */
 
     .services_service {
         padding: 8rem 5rem;
@@ -32,10 +32,10 @@
 }
 
 @media (min-width: 1201px) and (max-width: 1599px) {
-    .menu_mobile {
+/*     .menu_mobile {
         visibility: hidden;
         opacity: 0;
-    } 
+    } */
 
     .navbar_mobile-btn {
         display: none;
@@ -135,9 +135,9 @@
     }
 
     .menu_mobile {
-        visibility: hidden;
-        opacity: 0;
-    } 
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -145,13 +145,12 @@
         min-width: auto;
     }
 
-    .menu_mobile {
-        visibility: visible;
-        opacity: 1;
-    } 
-
     .navbar_nav {
         display: none;
+    }
+
+    .menu_navbar-fixed {
+        padding: 1.2rem 3rem;
     }
 
     .navbar_mobile-btn {
@@ -271,7 +270,7 @@
 
     .reviews_comntainer {
         flex-direction: column;
-        gap: 0;   
+        gap: 0;
     }
 
     .reviews_review {
@@ -319,13 +318,13 @@
     .contact_btn {
         padding: 1.8rem 3.5rem;
     }
-    
+
     .contact_thumb-chat {
         margin-right: -13rem;
         margin-bottom: -0.8rem;
         width: 70%;
     }
-    
+
     .contact_img {
         width: 90%;
     }
@@ -334,7 +333,7 @@
         bottom: 0;
         left: 1rem;
     }
-    
+
     .contact_thumb-chat {
         margin-right: -20rem;
         margin-bottom: -1rem;
@@ -353,7 +352,7 @@
         display: flex;
         flex-direction: column;
     }
-    
+
     .footer_left-container {
         display: flex;
         flex-direction: column;
@@ -383,6 +382,7 @@
         flex-basis: auto;
         text-align: center;
     }
+
     .footer_f-links {
         justify-content: center;
     }
@@ -393,6 +393,10 @@
 }
 
 @media (max-width: 770px) {
+    .menu_navbar-fixed {
+        padding: 1.2rem 3rem;
+    }
+
     .layout_banner {
         margin: 0 3rem;
         padding: 8rem 3rem;
@@ -437,11 +441,11 @@
 
     .projects_all {
         flex-direction: column;
-        align-items: center;  
+        align-items: center;
     }
 
     .projects_project {
-        width: calc(100% - 3.5rem);    
+        width: calc(100% - 3.5rem);
     }
 
     .categories_item {
@@ -450,7 +454,7 @@
         padding: 0 1rem;
     }
 
-    .layout_stats, 
+    .layout_stats,
     .layout_clients {
         padding: 6rem 3rem;
     }
@@ -491,13 +495,13 @@
         margin-bottom: -0.8rem;
         width: 80%;
     }
-    
+
     .contact_thumb-laptop {
         bottom: 0;
         left: 8rem;
         width: 35%;
     }
-    
+
     .contact_thumb-chat {
         margin-right: -15rem;
         margin-bottom: -1rem;
@@ -523,7 +527,7 @@
 }
 
 @media (max-width: 640px) {
-    
+
     .stats_container,
     .reviews_grid,
     .clients_container,
@@ -531,6 +535,10 @@
     .footer_container {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+    }
+
+    .menu_navbar-fixed {
+        padding: 1.2rem 3rem;
     }
 
     .layout_services {
@@ -582,6 +590,10 @@
         padding: 4rem 2rem;
     }
 
+    .menu_navbar-fixed {
+        padding: 1.2rem 3rem;
+    }
+
     .banner_btn {
         padding: 2rem 2.4rem;
     }
@@ -594,7 +606,11 @@
         width: 45%;
     }
 
-    .projects_title, .services_title, .reviews_title, .news_title, .contact_title {
+    .projects_title,
+    .services_title,
+    .reviews_title,
+    .news_title,
+    .contact_title {
         font-size: 3.5rem;
     }
 
@@ -614,11 +630,13 @@
         font-size: 2.8rem;
     }
 
-    .stats_title, .clients_title {
+    .stats_title,
+    .clients_title {
         font-size: 4.4rem;
     }
 
-    .layout_stats, .layout_clients {
+    .layout_stats,
+    .layout_clients {
         padding: 4rem 1.5rem;
     }
 
@@ -640,57 +658,110 @@
         font-size: 1.6rem;
     }
 
+    .contact_thumb-chat {
+        margin-right: -8rem;
+        width: 63%;
+    }
+
+    .contact_thumb-laptop {
+        left: 3rem;
+        width: 35%;
+    }
+
+    .contact_thumb-mobile {
+        right: 1rem;
+        width: 31%;
+    }
+
+    .footer_bottom {
+        font-size: 1.5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
     .footer_copyright {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 360px) {
+    .menu_navbar-fixed {
+        padding: 1.2rem 3rem;
+    }
+
+    .banner_content {
+        width: 75%;
+    }
+
+    .banner_btn {
         font-size: 1.6rem;
     }
-/*     .stats_container,
-    .reviews_grid,
-    .clients_container,
-    .news_container,
-    .footer_container {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+
+    .projects_category {
+        gap: 4rem;
+    }
+    
+    .review_description {
+        font-size: 1.5rem;
+        line-height: 1;
     }
 
-    .layout_services {
-        margin-left: 3rem;
-        margin-right: 1.2rem;
-    }
-
-    .categories_item {
-        font-size: 1.3rem;
-        margin: -1.9rem;
-        padding: 0 1.3rem;
-    }
-
-    .layout_projects {
-        padding-left: 3rem;
-        padding-right: 1.2rem;
-    }
-
-    .projects_all {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .backshapes_shape1 {
-        right: 32%;
-        left: 40%;
-    }
-
-    .backshapes_shape6 {
-        max-width: 12%;
-    }
-
-    .footer_widget-50 {
-        flex-basis: auto;
-    }
-
-    .footer_widget {
+    .service_descriptopn,
+    .new_description {
+        font-size: 1.5rem;
         margin-bottom: 3rem;
     }
 
-    .flinks_item-separator::after {
-        left: 53.6%;
-    } */
+    .service_more, 
+    .news_more {
+        font-size: 1.5rem;
+    }
+    
+    .stats_data {
+        padding: 5rem 2rem;
+    }
+
+    .services_container-img {
+        max-width: 5rem;
+    }
+
+    .services_title,
+    .projects_title,
+    .reviews_title,
+    .news_title,
+    .contact_title {
+        font-size: 3.9rem;
+    }
+
+    .stats_title, 
+    .clients_title {
+        font-size: 3.9rem;
+    }
+
+    .stats_container, 
+    .reviews_grid, 
+    .clients_container, 
+    .news_container, 
+    .footer_container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .social_img {
+        font-size: 2rem;
+    }
+
+    .foote_left-group {
+        font-size: 1.2rem;
+    }
+
+    .footer_bottom {
+        font-size: 1.3rem;
+    }
+
+    .footer_copyright {
+        font-size: 1.3rem;
+    }
+
 }

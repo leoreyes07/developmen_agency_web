@@ -1449,8 +1449,8 @@ body {
 }
 
 .menu_mobile-show {
-    visibility: visible;
-    opacity: 1;
+    visibility: hidden;
+    opacity: 0;
     left: 0;
 }
 

@@ -14,10 +14,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
     };
 
-    /* Click al boton de menu mostrar elnu de navegacion responsive*/
+    /* Click al boton de menu mostrar el menu de navegacion responsive*/
     mobile_btn.addEventListener("click", showHiddenMenu)
 
-    /* Al redimencuionarla pantalla ocultar menu si es necesario */
+    /* Al redimencionarla pantalla ocultar menu si es necesario */
     window.addEventListener("resize", () => {
         let window_width = parseInt(document.body.clientWidth);
 
