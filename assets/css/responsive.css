@@ -690,6 +690,10 @@
         padding: 1.2rem 3rem;
     }
 
+    .layout_banner {
+        border-radius: 5rem;
+    }
+
     .banner_content {
         width: 75%;
     }
@@ -763,5 +767,57 @@
     .footer_copyright {
         font-size: 1.3rem;
     }
+}
 
+@media (max-width: 344px) {
+    .menu_navbar-fixed {
+        padding: 1.2rem 3rem;
+    }
+
+    .layout_banner {
+        border-radius: 4rem;
+    }
+
+
+    .banner_btn {
+        font-size: 1.4rem;
+    }
+
+    .projects_category {
+        gap: 3rem;
+    }
+    
+    .review_description {
+        font-size: 1.4rem;
+        line-height: 1;
+    }
+    
+    .stats_data {
+        padding: 4rem 2rem;
+    }
+
+    .services_container-img {
+        max-width: 5rem;
+    }
+
+    .services_title,
+    .projects_title,
+    .reviews_title,
+    .news_title,
+    .contact_title {
+        font-size: 3.6rem;
+    }
+
+
+    .foote_left-group {
+        font-size: 1.2rem;
+    }
+
+    .footer_bottom {
+        font-size: 1.2rem;
+    }
+
+    .footer_copyright {
+        font-size: 1.2rem;
+    }
 }
