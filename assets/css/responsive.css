@@ -134,10 +134,10 @@
         padding-bottom: 7rem;
     }
 
-    .menu_mobile {
-        visibility: visible;
-        opacity: 1;
-    }
+/*     .menu_mobile {
+        visibility: hidden;
+        opacity: 0;
+    } */
 }
 
 @media (max-width: 1000px) {

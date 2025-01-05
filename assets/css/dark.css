@@ -1,0 +1,115 @@
+:root {
+    --mx-width: 1320px;
+    --text-body-color: #D3D3D4;
+    --primary-color: #5956E9;
+    --secondary-color: #D3D3D4;
+    --banner-color: #27272E;
+    --border-color: #393940;
+    --btn-bg-color: #2525BA;
+    --bg-card-color: #27272E;
+    --bg-projects-color: #292930;
+    --bg-dark-color: #27272E;
+    --bg-projects-card-color:#33333c;
+    --bg-contact-subtitle:#ffdc60;
+    --bg-darkest-color: #141414;
+    --bg-body-color: #212121;
+    --logo-color: #fff;
+    --over-dark-color: #ffdc60;        
+    --text-btn-color: #fff;
+    --text-subttitle-color: #c75c6f;
+    --text-black-color: #D3D3D4;
+    --text-description-color: #D3D3D4;
+}
+
+body {
+  background-color: var(--bg-body-color);  
+}
+
+.nav_submenu {
+    background-color: var(--banner-color);
+}
+
+.banner_btn {
+    background-color: var(--primary-color);
+}
+
+.menu_navbar-fixed {
+    background-color: var(--banner-color);
+}
+
+.project_content {
+    background-color: var(--bg-projects-card-color);
+}
+
+.review_description {
+    color: var(--text-body-color);
+}
+
+.author_name {
+    color: var(--text-body-color);
+}
+
+.layout_contact::before {
+    background-color: var(--banner-color);
+}
+
+.project_link-title:hover {
+    color: var(--bg-contact-subtitle);
+}
+
+.project_tags {
+    color: var(--text-black-color);
+}
+
+.contact_subtitle {
+    color: var(--bg-contact-subtitle);
+}
+
+.contact_btn {
+    background-color: var(--primary-color);
+}
+
+.contact_btn:hover {
+    color: var(--bg-contact-subtitle);
+}
+
+.services_service {
+    background: var(--banner-color);
+    background-color: var(--banner-color);
+}
+
+.news_more {
+    color: var(--text-black-color);
+}
+
+
+.categories_item {
+    color: var(--secondary-color);
+}
+
+.service_description {
+    color: var(--text-black-color);
+}
+
+.widget_link:hover {
+    color: var(--primary-color);
+}
+
+.service_more {
+    color: var(--text-black-color);
+}
+
+.widget_list {
+    color: var(--text-black-color);
+}
+
+.foote_left-group {
+    background-color: var(--bg-darkest-color);
+    box-shadow: none;
+    border: 1px solid var(--text-black-color);
+}
+
+.footer_left-control {
+    background-color: var(--bg-darkest-color);
+    color: var(--text-body-color);
+}

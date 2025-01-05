@@ -5,7 +5,7 @@
     --border-color: #e3e6e9;
     --btn-bg-color: #ffdc60;
     --bg-card-color: #f8f8f8;
-    --bg-proyects-color: #ECF2F6;
+    --bg-projects-color: #ECF2F6;
     --bg-dark-color: #27272E;
     --logo-color: #736BF4;
     --over-dark-color: #303035;
@@ -21,7 +21,7 @@
 
 /* Estilos generales */
 html {
-    font-size: 10px;
+    font-size: 62.5%;/* Equivalete a 10px */
     overflow-x: hidden;
 }
 body {
@@ -482,7 +482,7 @@ body {
 }
 
 .services_service:hover {
-    background-color: var(--bg-proyects-color);
+    background-color: var(--bg-projects-color);
 }
 
 .services_container-img {
@@ -504,10 +504,11 @@ body {
     transition: all 300ms ease-in-out;
 }
 
-.service_descriptopn {
+.service_description {
     font-size: 1.7rem;
     overflow: hidden;
     margin-bottom: 4rem;
+    margin-right: 4rem;
 }
 
 .service_more {
@@ -578,7 +579,7 @@ body {
 /* Estilos de proyectos */
 .layout_projects {
     position: relative;
-    background-color: var(--bg-proyects-color);
+    background-color: var(--bg-projects-color);
     padding: 14rem 10rem;
     z-index: 2;
 }
@@ -805,7 +806,7 @@ body {
     margin: 3rem 0;
     width: 50%;
     font-size: 2rem;
-    color: var(--description-text-color);
+    color: var(--text-description-color);
 }
 
 .reviews_comntainer {
@@ -859,7 +860,7 @@ body {
 .author_info {
     display: block;
     font-size: 1.4rem;
-    color: var(--description-text-color);
+    color: var(--text-description-color);
 }
 
 .reviews_shapes-item {
@@ -1257,13 +1258,14 @@ body {
     font-size: 6.4rem;
     line-height: 1.2;
     font-weight: 500;
-    color: var(--bg-dark-color);
+    color: var(--text-black-color);
     margin-bottom: 2rem;
 }
 
 .footer_left-subtitle {
     margin-bottom: 4rem;
     font-size: 1.7rem;
+    color: var(--text-black-color);
 }
 
 .foote_left-group {
@@ -1449,8 +1451,8 @@ body {
 }
 
 .menu_mobile-show {
-    visibility: hidden;
-    opacity: 0;
+    visibility: visible;
+    opacity: 1;
     left: 0;
 }
 
@@ -1529,4 +1531,35 @@ body {
     text-transform: capitalize;
     font-weight: 500;
     color: var(--text-body-color);
+}
+
+/* Estilos boton modo oscuro */
+
+.switcher {
+    position: fixed;
+    top: 20rem;
+    left: 0;
+    background-color: var(--primary-color);
+    border-radius: 0 3rem 3rem 0;
+    padding: 1rem;
+    z-index: 5;
+}
+
+.switcher_btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    display: flex;
+}
+.switcher_icon-light,
+.switcher_icon-dark {
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+    height: 4rem;
+    width: 4rem;
+    line-height: 3.6rem;
+}
+
+.switcher_icon-dark {
+    display: none;
 }

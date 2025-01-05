@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", () => {
         let scroll = window.scrollY;
 
-        if(scroll > 120){
+        if(scroll > 100){
             navbar.classList.add("menu_navbar-fixed");
         }else{
             navbar.classList.remove("menu_navbar-fixed");
